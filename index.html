@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>App Pomodoro</h1>
+    <div class="affichage">
+      <div class="bloc travail">
+        <p>Travail</p>
+        <p class="affichage__t"></p>
+      </div>
+
+      <div class="bloc pause">
+        <p>Repos</p>
+        <p class="affichage__p"></p>
+      </div>
+    </div>
+
+    <div class="container__btns">
+      <button class="btn b1">Commencer</button>
+      <button class="btn b2">Pause</button>
+      <button class="btn b3">Reset</button>
+    </div>
+    <h2></h2>
+
+    <form>
+      <label for="work">Temps de travail en minutes (60 minutes maximum)</label>
+      <input type="text" id="work" pattern="[0-9]{1,2}" />
+      <label for="rest">Temps de repos en minutes (60 minutes maximum)</label>
+      <input type="text" id="rest" pattern="[0-9]{1,2}" />
+
+      <button class="btn" type="submit">Modifier le timer</button>
+      <p></p>
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
