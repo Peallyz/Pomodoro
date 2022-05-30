@@ -135,8 +135,8 @@ form.addEventListener("submit", (e) => {
     }`;
     formTxt.innerText = "Veuilez entrer une durée entre 1min et 60min";
   } else {
-    travailModifier = newTime[1] * 60;
-    reposModifier = newTime[0] * 60;
+    travailModifier = newTime[0] * 60;
+    reposModifier = newTime[1] * 60;
     affichageTravail.innerText = `${Math.trunc(travailModifier / 60)} : ${
       travailModifier % 60 < 10
         ? `0${travailModifier % 60}`
